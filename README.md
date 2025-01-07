@@ -69,11 +69,69 @@ Convert the datatype according to its value
 ### 🧹 Duplicate Value
 There is no duplicate value
 
+## ⚙️ Feature Engineering (Before EDA) ⚙️
+### Add New Features
+* order_prepare_time : the difference between Time_Ordered and Time_Order_picked, reflecting the time taken for order preparation
+* distance : the spatial separation between Restaurant_coordinates and Delivery_coordinates.
+* day_of_week : Extracted from Order_Date, specifying the day (Sunday/Monday/etc)
+* time_category : Time_Order grouping -> Morning (00.00-10.00), Afternoon(10.01-14.00), Evening (14.01-18.00), Night (18.01-23.59)
+### Drop Unnecessary Features
+Some of the features are already represented by other features, so we need to drop these features:
+* Restaurant_latitude
+* Restaurant_longitude
+* Delivery_location_latitude
+* Delivery_location_longitude
+* Time_Orderd
+* Time_Order_picked
 ## 🔭 Exploratory Data Analysis 🔭
+### Customer's Behaviour about Time and Day
+First, from several existing features, I explored the time features.
 
-## Machine Learning
+From the graphics above, we can conclude that Customers most likely to use Delivery Service on the night (after 18.00 - 23.59) and 
+The day with the most customer’s orders is Wednesday.
 
+### Customer's Behaviour about their favorite type of Order
 
-## Insight
+From the graphic above, we can conclude that Customer's Favorite Order on Each Time Category are:
+* Morning: Meal
+* Afternoon: Meal
+* Evening: Drink
+* Night: Snack
+  
+### Does the large number of orders coming in at night affect the rating?
+Although most of customers using delivery services on the night, It doesn’t affects the Ratings. Night shift drivers still has good performance.<br >
+So, what features that impact to Rating Rate?
+### Correlation Between Time Taken and Rating Rate
+
+One of the features that impact to Rating is Time (Delivery) Taken. It has negative correlation.<br >
+It means the longer time can make the lowest ratings.
+
+## ⚙️ Feature Engineering (After EDA) ⚙️
+Feature engineering after EDA is carried out to standardize features so that they are ready for machine learning modeling.
+### Scaling Numerical Features
+* Delivery_person_Age
+* distance
+* Time_taken (min)
+* order_prepare_time (min)
+### Encoding Categorical Features
+1. Label Encoding for Festival
+2. Ordinal Encoding for Weather_conditions, Type of vehicle, Road_traffic_density, City, day of week
+   
+## 🧮 Machine Learning 🧮
+### Split the Data
+The first step to modeling machine learning is splitting the data. In this project, I split the data with a ratio of 80:20.<br >
+* 80% of 100% for training dataset, which we will use for training the model
+* 20% of 100% for testing dataset, which we will use for testing the model
+  
+### VIF Score & Heatmap Correlation
+Variance Inflation Factor (VIF) is a statistical measure used to detect the presence and severity of multicollinearity in a dataset.
+
+### Modeling and Evaluation
+
+### Hyperparameter Tuning
+
+### Importance Features
+
+## 💡 Insight 💡
 
 ## Recommendation
