@@ -1,7 +1,5 @@
-# deliv-rating-prediction
-This is my first data science project.
-
-## Customer’s Rating Predictive Model on Delivery Operations Business
+# ⭐ Customer’s Rating Predictive Model on Delivery Operations Business ⭐
+This is my first data science project. In this project, I will show you how to turn raw data into insightful business decision
 
 ## Problem Description
 
