@@ -1,5 +1,5 @@
 # ⭐ Customer’s Rating Predictive Model on Delivery Operations Business ⭐
-Hi there! This is my first data science project about Implementing Machine Learning Modeling to predict and optimize the Rating Rate of Delivery Business Operations. If you have any suggestions or supportive critics, please do not hesitate to contact me. 😊
+Hi there! This is my first data science project about Implementing Machine Learning Model to predict and optimize the Rating Rate of Delivery Business Operations. If you have any suggestions or supportive critics, please do not hesitate to contact me. 😊
 
 ## 🛠️ Tools and Language 🛠️
 <img align="left" alt="Visual Studio Code" width="30px" src="https://upload.wikimedia.org/wikipedia/commons/9/9a/Visual_Studio_Code_1.35_icon.svg" style="padding-right:10px;" />
