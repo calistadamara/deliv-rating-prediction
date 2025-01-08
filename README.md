@@ -12,9 +12,9 @@ Hi there! This is my first data science project about Implementing Machine Learn
 
 ## 💎 Business Understanding 💎
 ### 🎯 Project Background
-Delivery Operations Business experiences rapid growth every year and is predicted to experience greater growth in 2025-2026, based on ![Statista Market Insights](https://www.statista.com/outlook/emo/online-food-delivery/worldwide). In Indonesia itself, it has experienced 30% growth, especially after the pandemic.
-<img src="https://github.com/calistadamara/deliv-rating-prediction/blob/main/img/Delivery%20Business%20Revenue.png" width="700" /><br >
-This business also affects various sectors, such as economic growth, social behavior, and digitalization. Businesse that provide efficiency is also in great demand by the public and have a big influence on the public's consumption behaviour. In addition, this business also influences technological progress and digitalization in operational delivery. That's why I chose Delivery Operations topic.<br >
+Delivery Operations Business experiences rapid growth every year and is predicted to experience greater growth in 2025-2026, based on [Statista Market Insights](https://www.statista.com/outlook/emo/online-food-delivery/worldwide). In Indonesia, it has experienced 30% growth, especially after the pandemic.<br >
+<img src="https://github.com/calistadamara/deliv-rating-prediction/blob/main/img/Delivery%20Business%20Revenue.png" width="600" /><br >
+This business also affects various sectors, such as economic growth, social behavior, and digitalization. Business that provide efficiency is in great demand by the public and have a big influence on the public's consumption behaviour. In addition, this business also influences technological progress and digitalization in operational delivery. That's why I chose Delivery Operations topic.<br >
 ### 🎯 Problem
 The large growth of this business also makes its competitiveness high, so the problem raised in this project is the high competition in the delivery business.
 ### 🎯 Goals
