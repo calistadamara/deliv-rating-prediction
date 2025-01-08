@@ -131,24 +131,27 @@ Multicollinearity is the condition when two or more features/predictors are high
 * VIF between 4 and 10 → Moderate multicollinearity
 * VIF > 10 → Severe multicollinearity <br >
 Here is the output of vif score calculation:<br >
-<img src="https://github.com/calistadamara/deliv-rating-prediction/blob/main/img/vif.png" width="300" />
-VIF Score < 4.0, Multicollinearity between independent variables is low and the model is stable, so there is no need for multicollinearity handling.
-#### Visualization of correlation for each features
-<img src="https://github.com/calistadamara/deliv-rating-prediction/blob/main/img/heatmap.png" width="400" /><br >
+<img src="https://github.com/calistadamara/deliv-rating-prediction/blob/main/img/vif.png" width="200" />
+VIF Score < 4.0, Multicollinearity between independent variables is low and the model is stable, so there is no need for multicollinearity handling.<br >
+Visualization of correlation for each features:
+<img src="https://github.com/calistadamara/deliv-rating-prediction/blob/main/img/heatmap.png" width="500" />
+
 ### 📌 Modeling and Evaluation
-In this project, 4 types of ML are used for comparison, namely Ridge Regression, Lasso Regression, Random Forest Regression and Xgboost Regression. Also, 3 metrics are used to measure their performance, namely RMSE (Root Mean Square Error), MAE (Mean Absolute Error) and MAPE (Mean Absolute Percentage Error). The following is the results of model evaluation on the train dataset and test dataset.
-<img src="https://github.com/calistadamara/deliv-rating-prediction/blob/main/img/modeling%20and%20eval.png" width="200" /><br >
+In this project, 4 types of ML are used for comparison, namely Ridge Regression, Lasso Regression, Random Forest Regression and Xgboost Regression. Also, 3 metrics are used to measure their performance, namely RMSE (Root Mean Square Error), MAE (Mean Absolute Error) and MAPE (Mean Absolute Percentage Error). The following is the results of model evaluation on the train dataset and test dataset.<br >
+<img src="https://github.com/calistadamara/deliv-rating-prediction/blob/main/img/modeling%20and%20eval.png" width="500" /><br >
 From the 4 models, RandomForest Regression is the best model, The model has the smallest error and experiences an increase in performance when implemented from training data to test data.
+
 ### 📌 Hyperparameter Tuning
-Tuning the parameters with cross validation with k-fold using GridSearchCV.
-<img src="https://github.com/calistadamara/deliv-rating-prediction/blob/main/img/parameter%20tuning.png" width="100" /><br >
+Tuning the parameters with cross validation with k-fold using GridSearchCV.<br >
+<img src="https://github.com/calistadamara/deliv-rating-prediction/blob/main/img/parameter%20tuning.png" width="400" /><br >
 The highest score (0.493689) was achieved by the model with max_depth=5 and n_estimators=10.
-Comparison metrics before and after tuning parameters.
-<img src="https://github.com/calistadamara/deliv-rating-prediction/blob/main/img/before-after%20tuning.png" width="100" /><br >
+Comparison metrics before and after tuning parameters.<br >
+<img src="https://github.com/calistadamara/deliv-rating-prediction/blob/main/img/before-after%20tuning.png" width="300" /><br >
 After tuning, the model shows better accuration of test data.
+
 ### 📌 Importance Features
 To understand how the model predicts and provide interpretive insights, the DALEX library is used. DALEX (Descriptive mAchine Learning EXplanations) is a Python library for describing and analyzing machine learning models.
-<img src="https://github.com/calistadamara/deliv-rating-prediction/blob/main/img/importance%20feature.png" width="300" /><br >
+<img src="https://github.com/calistadamara/deliv-rating-prediction/blob/main/img/importance%20feature.png" width="500" /><br >
 From the output of DALEX explainer above we can conclude that the top 3 features that influences the rating rate are:
 1. Time taken
 2. Weather condition
@@ -172,17 +175,16 @@ From the output of DALEX explainer above we can conclude that the top 3 features
 ### 🗂️ Machine Learning Model
 Predictive Model succesfully build, the best model is Random Forest Regressor, 
 Top 3 The Most Importance Features are:
-1. Time taken
-2. Weather condition
-3. Vehicle condition
-Recommendations:
-1. To manage time taken:
+1. Time taken<br >
+   Recommendation to manage time taken:
    * Optimize delivery routing algorithms to ensure more efficient trips.
    * Invest in technology like traffic prediction and delivery time estimation to assist drivers.
-2. To manage Weather condition: Offer customers notification of potential delays due to extreme weather conditions.
-3. To manage Vehicle Condition: Design regulation of vehicle inspections into operational flows to minimize the risk of delays.
-<br >
-## ❤️ THANK YOU! ❤️
-That's all about the project, I hope this project can bring insight. thank you!
+3. Weather condition<br >
+    Recommendation to manage Weather condition: Offer customers notification of potential delays due to extreme weather conditions
+4. Vehicle condition <br >
+   Recommendation to manage Vehicle condition: Design regulation of vehicle inspections into operational flows to minimize the risk of delays.
+
+### ❤️ Closing ❤️
+That's all about the project, I hope this project can bring insight. Thank you!
 
 
